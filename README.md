@@ -22,7 +22,9 @@ npm install --save switchbox
 ### Sass
 ```scss
 // Define variables
-// ...
+$switch-primary-color: blue;
+$slider-height: 6px;
+// Then import
 @import "node_modules/switchbox/src/switchbox";
 ```
 

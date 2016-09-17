@@ -28,7 +28,6 @@ $transition: all $transition-duration $transition-function !default;
 
 .switch-box {
   display: block;
-  margin-top: $switch-height;
   
   .switch-box-slider {
     position: relative;
