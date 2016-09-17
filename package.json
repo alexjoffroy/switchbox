@@ -1,0 +1,34 @@
+{
+  "name": "switchbox",
+  "version": "1.0.0",
+  "description": "It's like a checkbox, but more like a switch !",
+  "main": "dist/switchbox.css",
+  "scripts": {
+    "scss": "node-sass src/switchbox.scss --output-style nested --indent-type space --indent-width 4 dist/switchbox.css",
+    "scss:min": "node-sass src/switchbox.scss --output-style compressed dist/switchbox.min.css ",
+    "autoprefixer": "postcss --use autoprefixer -b 'last 2 versions' -r dist/*",
+    "build": "npm run scss && npm run scss:min && npm run autoprefixer",
+    "watch": "onchange 'src/*.scss' -- npm run build",
+    "postinstall": "npm run build"
+  },
+  "keywords": [
+    "ui",
+    "css",
+    "ux",
+    "checkbox",
+    "switch"
+  ],
+  "author": "alexjoffroy",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^6.4.1",
+    "node-sass": "^3.10.0",
+    "onchange": "^3.0.2",
+    "postcss-cli": "^2.6.0"
+  },
+  "repository": { 
+    "type": "git", 
+    "url": "https://github.com/alexjoffroy/switchbox.git"
+  },
+  "bugs":"https://github.com/alexjoffroy/switchbox/issues"
+}
