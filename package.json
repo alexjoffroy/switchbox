@@ -1,6 +1,6 @@
 {
   "name": "switchbox",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "It's like a checkbox, but more like a switch !",
   "main": "dist/switchbox.css",
   "scripts": {
