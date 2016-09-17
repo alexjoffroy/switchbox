@@ -8,8 +8,7 @@
     "scss:min": "node-sass src/switchbox.scss --output-style compressed dist/switchbox.min.css ",
     "autoprefixer": "postcss --use autoprefixer -b 'last 2 versions' -r dist/*",
     "build": "npm run scss && npm run scss:min && npm run autoprefixer",
-    "watch": "onchange 'src/*.scss' -- npm run build",
-    "postinstall": "npm run build"
+    "watch": "onchange 'src/*.scss' -- npm run build"
   },
   "keywords": [
     "ui",
